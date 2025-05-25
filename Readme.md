@@ -1,11 +1,11 @@
 ### Go to correct direction
 For Planetoid datasets (Cora, Citeseer and Pubmed):
 ~~~
-cd Graph_Vision_Networks/experiments/experiment_planetoid
+cd experiments/experiment_planetoid
 ~~~
 For OGBL datasets (ogbl-collab, ogbl-ppa, ogbl-citation2, ogbl-ddi)
 ~~~
-cd Graph_Vision_Networks/experiments/experiment_ogbl
+cd experiments/experiment_ogbl
 ~~~
 ### Run the scripts to re-Produce the results
 Please go to ./scripts
