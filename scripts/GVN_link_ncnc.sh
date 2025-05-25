@@ -1,0 +1,8 @@
+# Cora
+python main_gvn_link_ncnc_cora.py --id 5 --dataset cora --predp 0.1 --gnndp 0.1  --mplayers 2 --nnlayers 1 --hiddim 128 --testbs 512 --epochs 9999 --kill_cnt 10 --eval_steps 5 --xdp 0.7 --tdp 0.3 --pt 0.75 --gnnedp 0.0 --preedp 0.4 --probscale 4.3 --proboffset 2.8 --alpha 1.0 --ln --lnnn --predictor gvnlincn1cn1v1 --model puregcn   --maskinput  --jk  --use_xlin  --tailact --attention_dim 512 --velr 0.001 --fslr 1e-5 --gnnlr 0.01 --prelr 0.01 --l2 1e-4 --batch_size 128 --runs 10 --no_label
+
+# Citeseer
+python main_gvn_link_ncnc_citeseer.py --id 5 --dataset citeseer --predp 0.5 --gnndp 0.5  --mplayers 1 --nnlayers 2 --hiddim 256 --testbs 512 --epochs 9999 --kill_cnt 10 --eval_steps 5 --xdp 0.4 --tdp 0.0 --pt 0.75 --gnnedp 0.0 --preedp 0.0  --probscale 6.5 --proboffset 4.4 --alpha 0.4 --ln --lnnn --predictor gvnlincn1cn1v1 --model puregcn --maskinput --jk --use_xlin --tailact --twolayerlin --attention_dim 512 --velr 1e-5 --fslr 1e-7 --gnnlr 0.001 --prelr 0.001 --l2 1e-7 --batch_size 128 --runs 10 --use_vsf
+
+# Pubmed
+python main_gvn_link_ncnc_pubmed.py --id 7 --no_label --hop_num 2 --dataset pubmed  --predictor gvnlincn1cn1v1  --gnnlr 0.001 --prelr 0.001 --l2 0  --predp 0.3 --gnndp 0.3 --mplayers 3 --nnlayers 3   --hiddim 256 --epochs 300 --eval_steps 1 --kill_cnt 300 --batch_size 128 --xdp 0.3 --tdp 0.0 --pt 0.5 --gnnedp 0.0 --preedp 0.0   --probscale 5.3 --proboffset 0.5 --alpha 0.3 --ln --lnnn   --model puregcn  --testbs 128  --maskinput  --jk  --use_xlin  --tailact --velr 1e-7 --fslr 1e-7 --attention_dim 128
